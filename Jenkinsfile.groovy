@@ -8,7 +8,9 @@ pipeline {
                 git 'https://github.com/MostafaAhmed123/cloud_lab_task.git'
                 
                 // Execute bash script file
-                sh './entrypoint.sh'
+                script {
+                    sh './entrypoint.sh'
+                }
             }
         }
     }
