@@ -2,4 +2,6 @@
 ls
 
 # Concatenating the contents of all files in the current directory
-cat ./*
+cat ./* > "output.txt"
+
+cat ./output.txt
