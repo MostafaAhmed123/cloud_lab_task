@@ -1,5 +1,5 @@
-# listing the content of the current directory
-
+# Listing the content of the current directory
 ls
 
-cat *
+# Concatenating the contents of all files in the current directory
+cat ./*
