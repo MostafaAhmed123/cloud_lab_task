@@ -1,5 +1,6 @@
 pipeline {
     agent any
+
     tools {
         git 'Default'
     }
@@ -7,11 +8,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Get some code from a GitHub repository
-                git 'https://github.com/MostafaAhmed123/cloud_lab_task.git'
-                
-                // Execute bash script file
                 script {
+                    git 'https://github.com/MostafaAhmed123/cloud_lab_task.git'
                     sh './entrypoint.sh'
                 }
             }
